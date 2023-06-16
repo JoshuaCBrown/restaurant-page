@@ -1,4 +1,25 @@
-.bg {
-    background-repeat: no-repeat;
-    width: auto;
+#content {
+    display: grid;
+    white-space: pre-wrap;
+}
+
+.unchanging {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.changing {
+    display: grid;
+    grid-auto-columns: auto;
+}
+
+.fp-image {
+    opacity: .5;
+    width: 20rem;
+    border-radius: 50%;
+}
+
+img {
+    width: 10rem;
 }
