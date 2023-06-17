@@ -14,7 +14,6 @@ body {
 div {
     /* border: 2px solid white;
     margin: 4px; */
-    /* backdrop-filter: blur(20px); */
     
 }
 
@@ -53,8 +52,8 @@ div {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    grid-column: 1 / span 1;
-    grid-row: 1 / span 1;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 svg {
@@ -71,7 +70,6 @@ svg {
 }
 
 h1 {
-    margin: 4rem;
 }
 
 .btn-div {
@@ -134,6 +132,9 @@ img {
 .menu-container {
     display: grid;
     grid-template-columns: 1fr 5fr;
+    margin-left: 4rem;
+    margin-right: 2rem;
+    
 }
 
 div[class^="menu-img"] {
