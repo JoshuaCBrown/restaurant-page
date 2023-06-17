@@ -1,5 +1,6 @@
 const pageLoader = () => {    
     const content = document.querySelector('#content');
+    const pageHead = document.querySelector('.page-header');
 
     //STATIC CONTENT
     const statContent = document.createElement('div');
@@ -7,6 +8,7 @@ const pageLoader = () => {
     const header = document.createElement('h1');
     const subheader = document.createElement('h2');
     const btnDiv = document.createElement('div');
+    btnDiv.className = 'btn-div';
 
     const homeBtn = document.createElement('button');
     homeBtn.textContent = 'HOME';
@@ -34,7 +36,7 @@ const pageLoader = () => {
     //edit below to change page content
 
     header.textContent = 'ROBOT FOOD';
-    subheader.textContent = 'food for robots';
+    subheader.textContent = '';
     copy.textContent = 'This is a fantastic restaurant. It is made by humans, for robots. Don\'t be turned off by the idea of robots, or by the idea that robots might want to eat food too. Just enjoy it for what it is... the finest nuts, bolts, wires, and grease crypto can buy served up piping cold and ready to consume to the advanced machines destined to become our eventual robotic overlords, taking the world as we know it and turn it into a grey hellscape devoid of pesky human emotion and programming typos.';
     fpImg.src = './imgs/robot.jpg';
 
@@ -46,11 +48,13 @@ const pageLoader = () => {
     statContent.appendChild(header);
     statContent.appendChild(subheader);
     statContent.appendChild(btnDiv);
+
+    pageHead.appendChild(statContent);
+
     textContent.appendChild(copy);
     imgContent.appendChild(fpImg);
     dynContent.appendChild(imgContent);
     dynContent.appendChild(textContent);
-    content.appendChild(statContent);
     content.appendChild(dynContent);
 
 };

@@ -54,6 +54,7 @@ const menuLoader = () => {
         menuImg.className = 'menu-img' + i;
 
         const itemImg = document.createElement('img');
+        itemImg.className = 'img-itself' + i;
         itemImg.src = menuImgs[i];
         
         //append children to associated parents all appended to menuContainer
