@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Reader</title>
+    
+    
+
+
+<link rel="stylesheet" href="./Article Reader_files/style.css"><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link href="./Article Reader_files/css2" rel="stylesheet"></head>
+<body cz-shortcut-listen="true">
+    <div class="bigcontainer">
+        <div class="title">
+
+                <div class="con">
+                    <img src="./Article Reader_files/icons8-read-96.png">
+                    <h2>Article</h2>
+                    <h1>Reader</h1>
+                </div>
+        </div>
+        <div class="leftdiv">
+            <div class="counter-box">
+                <p>input: <span class="wordcounter">339 words</span></p>
+                <p>output: <span class="buttoncounter">54 words</span></p>
+            </div>
+        </div>
+        <div class="container">
+            
+            <div class="input">
+                <div class="outerinput">
+                    <div class="innerinput">
+                        <!-- <label for="article">Article text</label> -->
+                        <textarea autofocus="" required="" id="article" name="article" rows="20" cols="50"></textarea>
+                        
+                    </div>
+                </div>
+                <!-- <div class="processbtn"> -->
+                    <button id="process">READ</button>
+                <!-- </div> -->
+                    <div class="check-container">
+                        <div class="checkboxes">
+                            <label class="allboxclass">
+                                <input type="checkbox" id="allbox" name="allbox" value="true"><span>all</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="sigbox" name="sigbox"><span>key</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="datebox" name="datebox"><span>time</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="spacebox" name="spacebox"><span>space</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" id="overflowbox" name="overflowbox"><span>overflow</span>
+                            </label>
+                        </div>
+                    </div>
+
+            
+
+                <div class="output">
+
+                <button id="0v0" class="overflow-btn all-btn">Tesla</button><button id="2v0" class="overflow-btn all-btn">Tesla</button><button id="2v1" class="sig-button all-btn">FSD Beta</button><button id="3v0" class="overflow-btn all-btn">Some</button><button id="3v1" class="overflow-btn all-btn">FSD</button><button id="5v0" class="overflow-btn all-btn">Of</button><button id="5v1" class="sig-button all-btn">FSD Beta</button><button id="6v0" class="overflow-btn all-btn">They</button><button id="7v0" class="sig-button all-btn">FSD Beta</button><button id="11v0" class="sig-button all-btn">Visit Torque News</button><button id="12v0" class="sig-button all-btn">FSD Beta</button><button id="14v0" class="overflow-btn all-btn">I</button><button id="14v1" class="sig-button all-btn">Torque News Tesla FSD</button><button id="14v2" class="sig-button all-btn">New York City</button><button id="16v0" class="overflow-btn all-btn">Comments</button><button id="16v1" class="overflow-btn all-btn">Twitter:</button><button id="18v0" class="overflow-btn all-btn">Truly</button><button id="18v1" class="overflow-btn all-btn">FSD</button><button id="19v0" class="sig-button all-btn">Nice! But</button><button id="20v0" class="overflow-btn all-btn">I</button><button id="20v1" class="overflow-btn all-btn">FSD</button><button id="20v2" class="overflow-btn all-btn">Tesla</button><button id="21v0" class="sig-button all-btn">Tesla FSD Beta</button><button id="23v0" class="sig-button all-btn">FSD Beta</button><button id="25v0" class="sig-button all-btn">Armen Hareyan</button><button id="25v1" class="overflow-btn all-btn">Editor</button><button id="25v2" class="overflow-btn all-btn">Chief</button><button id="25v3" class="sig-button all-btn">Torque News</button><button id="26v0" class="overflow-btn all-btn">He</button><button id="26v1" class="overflow-btn all-btn">TorqueNews.com</button><button id="27v0" class="overflow-btn all-btn">He</button><button id="27v1" class="sig-button all-btn">Torque News Twitter Facebok Linkedin</button><button id="27v2" class="overflow-btn all-btn">Youtube.</button></div>
+                <div class="show-sentence"></div>
+            </div>
+        <div class="rightdiv">
+            
+        </div>
+    </div>
+    <script src="./Article Reader_files/jscript.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</div></body></html>
